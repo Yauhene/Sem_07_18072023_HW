@@ -105,7 +105,6 @@ public class UserDialog {
             System.out.println();
             System.out.println("Для продолжения введите букву \"n\"");
             userChoice = scanner.next();
-            System.out.println("userChoice = " + userChoice);
             if (userChoice.equals("n")) {
                 getOut = true;
             } else {
