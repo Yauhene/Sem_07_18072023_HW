@@ -1,5 +1,6 @@
 package simbols;
 
+import java.util.HashMap;
 import java.util.HashSet;
 
 /**
@@ -14,6 +15,10 @@ abstract public class Simbols implements SimbolsInterface {
     public static HashSet<String> getActionsSet() {
         return actionsSet;
     }
+    public static HashMap<String, String> getActionsMap() {
+        return actionsMap;
+    }
 
 
 }
+

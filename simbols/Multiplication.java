@@ -1,15 +1,27 @@
 package simbols;
 
 public class Multiplication extends Simbols implements SimbolsInterface {
-    String simbolMult;
+    String actionSimbol;;
+    String actionName = "Multiplication (умножение)";
 
     public Multiplication (String simbol) {
-        this.simbolMult = simbol;
-        addSimbol(simbolMult);
+        this.actionSimbol = simbol;
+        this.actionName = actionName;
+        addSimbol(actionSimbol, actionName);
     }
 
-    @Override
-    public void addSimbol(String simbol) {
-        actionsSet.add(simbol);
+    public String getActionName() {
+        String out = this.actionName;
+        return actionName;
+    }
+    public String getSimbol() {
+        return actionSimbol;
+    }
+//    @Override
+//    public void addSimbol(String simbol, String name) {
+//        actionsMap.put(actionSimbol, actionName);
+//    }
+    public static int action(int num1, int num2) {
+        return (num1 * num2);
     }
 }
