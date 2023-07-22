@@ -17,10 +17,7 @@ public class Multiplication extends Simbols implements SimbolsInterface {
     public String getSimbol() {
         return actionSimbol;
     }
-//    @Override
-//    public void addSimbol(String simbol, String name) {
-//        actionsMap.put(actionSimbol, actionName);
-//    }
+
     public static int action(int num1, int num2) {
         return (num1 * num2);
     }

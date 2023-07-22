@@ -65,9 +65,6 @@ public class UserDialog {
             }
         }
     }
-
-
-
     public void basicPrompt() {
         System.out.println("В данный момент программа инициализирована для " + actionsMap.size() + "-х " +
                 "арифметических действий:");
@@ -80,7 +77,6 @@ public class UserDialog {
             Scanner scanner = new Scanner(System.in);
             System.out.println(" ------------------------------------------ ");
             System.out.print("Введите символ действия (\"*\", \"+\" или \"/\") или \"exit\" для завершения: ");
-            System.out.println();
             String choice = scanner.next();
             System.out.println();
             return choice;
@@ -88,7 +84,6 @@ public class UserDialog {
     public int promptNum(int in) {
         int num;
         Scanner scanner = new Scanner(System.in);
-        // System.out.println(" ------------------------------------------ ");
         if (in == 1) {
             System.out.print("Введите первое целое число : ");
         } else if (in == 2) {

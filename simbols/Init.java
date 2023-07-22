@@ -2,7 +2,6 @@ package simbols;
 
 public class Init extends Simbols implements SimbolsInterface{
     public Init() {
-
         Addition addition = new Addition("+");
         Multiplication multiplication = new Multiplication("*");
         Division division = new Division("/");
@@ -10,6 +9,6 @@ public class Init extends Simbols implements SimbolsInterface{
 
     @Override
     public void addSimbol(String simbol, String name) {
-        //actionsSet.add();
+
     }
 }

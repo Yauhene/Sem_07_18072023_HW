@@ -18,7 +18,5 @@ abstract public class Simbols implements SimbolsInterface {
     public static HashMap<String, String> getActionsMap() {
         return actionsMap;
     }
-
-
 }
 

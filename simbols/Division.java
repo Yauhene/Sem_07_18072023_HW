@@ -18,15 +18,12 @@ public class Division extends Simbols implements SimbolsInterface {
         return actionSimbol;
     }
 
-//    @Override
-//    public void addSimbol(String simbol, String name) {
-//        actionsMap.put(actionSimbol, actionName);
-//    }
     public static double action(int num1, int num2) {
         if (num2 != 0) {
             return (num1/num2); }
         else {
-            System.out.println("Деление на ноль невозможно!");
+            System.out.println();
+            System.out.println("========== Деление на ноль невозможно! ==========");
             return 0;
         }
     }
